@@ -47,14 +47,14 @@ Wire Wire Line
 Wire Wire Line
 	5350 3550 4650 3550
 Wire Wire Line
-	5350 3550 6600 3550
+	5350 3550 5950 3550
 Connection ~ 5350 3550
 Wire Wire Line
 	6600 3650 6500 3650
 Wire Wire Line
 	6500 3650 6500 3900
 Wire Wire Line
-	6500 3900 5350 3900
+	6500 3900 6250 3900
 Connection ~ 5350 3900
 $Comp
 L Diode_Bridge:B125R D1
@@ -93,4 +93,68 @@ F 3 "~" H 3400 3550 50  0001 C CNN
 	1    3400 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 6146B9BF
+P 6050 3350
+F 0 "TP3" H 6108 3468 50  0000 L CNN
+F 1 "TestPoint" H 6108 3377 50  0000 L CNN
+F 2 "" H 6250 3350 50  0001 C CNN
+F 3 "~" H 6250 3350 50  0001 C CNN
+	1    6050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 6146BFC3
+P 5950 3100
+F 0 "TP1" H 6008 3218 50  0000 L CNN
+F 1 "TestPoint" H 6008 3127 50  0000 L CNN
+F 2 "" H 6150 3100 50  0001 C CNN
+F 3 "~" H 6150 3100 50  0001 C CNN
+	1    5950 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 6146DDCC
+P 6150 4300
+F 0 "TP2" H 6092 4326 50  0000 R CNN
+F 1 "TestPoint" H 6092 4417 50  0000 R CNN
+F 2 "" H 6350 4300 50  0001 C CNN
+F 3 "~" H 6350 4300 50  0001 C CNN
+	1    6150 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 6146DDD2
+P 6250 4050
+F 0 "TP4" H 6192 4076 50  0000 R CNN
+F 1 "TestPoint" H 6192 4167 50  0000 R CNN
+F 2 "" H 6450 4050 50  0001 C CNN
+F 3 "~" H 6450 4050 50  0001 C CNN
+	1    6250 4050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 3100 5950 3550
+Connection ~ 5950 3550
+Wire Wire Line
+	5950 3550 6050 3550
+Wire Wire Line
+	6050 3350 6050 3550
+Connection ~ 6050 3550
+Wire Wire Line
+	6050 3550 6600 3550
+Wire Wire Line
+	6150 4300 6150 3900
+Connection ~ 6150 3900
+Wire Wire Line
+	6150 3900 5350 3900
+Wire Wire Line
+	6250 4050 6250 3900
+Connection ~ 6250 3900
+Wire Wire Line
+	6250 3900 6150 3900
 $EndSCHEMATC
