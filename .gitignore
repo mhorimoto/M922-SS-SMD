@@ -12,6 +12,8 @@
 *.kicad_pcb-bak
 *.sch-bak
 *~
+m922-backups/*
+
 _autosave-*
 *.tmp
 *-save.pro
